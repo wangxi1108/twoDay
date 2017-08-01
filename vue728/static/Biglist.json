@@ -1,0 +1,87 @@
+[
+	{
+         "title":"家居",
+          "lei":["生活电器","个护健康","热门电器" ],
+          "url":[
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg"
+          ]
+    },
+    {
+         "title":"珠宝首饰",
+          "lei":["黄金首饰","钟表","眼镜" ],
+          "url":[
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png"
+          ]
+    },
+    {
+         "title":"户外运动",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg"
+          ]
+    }
+
+]
