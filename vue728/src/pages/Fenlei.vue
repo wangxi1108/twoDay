@@ -9,12 +9,102 @@
 	         	<i class="iconfont icon-magnifier"></i>
 	        </router-link>
       </header>
+		<div class="content">
+			<ul class="con_left">
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+				<li>
+					<router-link to="#">食品/饮料/酒水</router-link>
+				</li>
+			
+
+
+			</ul>
+			<div class="jian">
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+				<p>1ererer</p>
+
+			</div>
+
+
+		</div>
+
 	</div>
 
 
 </template>
 
 <script>
+
+import fen from '../../static/fen.css'
+
+
+
 export default{
 	name:'fenlei',
 	data(){
