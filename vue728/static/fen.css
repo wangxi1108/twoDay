@@ -7,7 +7,7 @@
 
 .con_left{
 		width:1.2rem;
-		height:5.72rem;
+		height:6.67rem;
 		float:left;
 		overflow-y:auto;
 		margin-top: 0.43rem;
@@ -15,14 +15,8 @@
 .con_left li{
 	width:1.02rem;
 	height:0.5rem;
-}
-.con_left li a{
-	display:block;
-	width:1.02rem;
-	height:0.5rem;
-	text-decoration:none;
-	line-height:0.5rem;
-	text-decoration:center;
+	line-height:0.5rem; 
+	text-align:center;
 	border-bottom:1px solid #eee;
 	border-right:1px solid #eee;
 	font-size:0.12rem;
@@ -31,17 +25,39 @@
 }
 
 
-.jian{
-		width:1.8rem;
-		height:5.72rem;
-		float:right;
+
+.con_right{
+		width:2.55rem;
+		height:6.67rem;
+		float:left;
 		overflow-y:auto;
 		margin-top: 0.43rem;
 		background:#f5f5f5;
-
 	}
+.con_right	dl{
+			width:100%;
+			height:1rem;
+			}
 
-	 p{
-		width:0.3rem;
-		height:0.5rem;
-	}
+.con_right	dl	dt{
+				width:100%;
+				height:0.5rem;
+				background:#fff;
+				line-height:0.5rem;
+			}
+.con_right	dl	dd{
+				width:100%;
+				height:0.5rem;
+				background:#eee;
+			}
+
+.con_right	dd	a{
+					display:inline-block;
+					float:left;
+					width:0.5rem;
+					height:0.2rem;
+					text-decoration:none;
+					color:inherit;
+				}
+
+	 

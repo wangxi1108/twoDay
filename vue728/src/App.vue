@@ -3,7 +3,7 @@
     <router-view></router-view>
     <footer>
 
-      <router-link to="/">
+      <router-link to="/" exact>
         <i class="iconfont icon-shouye"></i>
         <p>首页</p>
       </router-link>
@@ -44,7 +44,7 @@ footer{
   width: 100%;
   height: 0.43rem;
   background: #fff;
-  border-top: 2px solid red;
+  border-top: 2px solid #eee;
   position: fixed;
   left: 0;
   bottom: 0;
@@ -56,6 +56,7 @@ footer a{
   display: block;
   text-decoration: none;
   color:#000;
+  text-align: center;
 }
 
 footer a p{

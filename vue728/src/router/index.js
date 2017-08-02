@@ -4,6 +4,7 @@ import Home from '@/pages/Home'
 import Fenlei from '@/pages/Fenlei'
 import Welfare from '@/pages/Welfare'
 import My from '@/pages/My'
+import List from '@/pages/List'
 
 Vue.use(Router)
 
@@ -28,6 +29,11 @@ export default new Router({
     	path:'/My',
     	name:'My',
     	component:My
+    },
+    {
+      path:'/List',
+      name:'List',
+      component:List
     }
   ]
 

@@ -64,6 +64,7 @@ export default{
 					font-size:0.14rem;
 				}
 				p{
+					
 					float:right;
 					font-size:0.12rem;
 	

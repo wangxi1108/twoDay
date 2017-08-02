@@ -23,6 +23,124 @@ var autoOpenBrowser = !!config.dev.autoOpenBrowser
 var proxyTable = config.dev.proxyTable
 
 var app = express()
+//-----------自己数据启服务-----------
+
+app.get("/api/Biglist",function(req,res){
+  res.json(
+      [
+  {
+         "title":"家居",
+          "lei":["生活电器","个护健康","热门电器" ],
+          "url":[
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg",
+            "/static/img1/1499476874118_2.jpg"
+          ]
+    },
+    {
+         "title":"珠宝首饰",
+          "lei":["黄金首饰","钟表","眼镜" ],
+          "url":[
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg",
+            "/static/img1/1499400139048_2.jpg"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1500963177814_2.jpg",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1499070052533_2.jpg",
+            "/static/img1/1499070052533_2.jpg"
+          ]
+    },
+    {
+         "title":"鞋子箱包",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1499070052533_2.jpg",
+            "/static/img1/1499070052533_2.jpg",
+            "/static/img1/1499070052533_2.jpg",
+            "/static/img1/1499070052533_2.jpg",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png",
+            "/static/img1/1496824061627_2.png"
+          ]
+    },
+    {
+         "title":"户外运动",
+          "lei":["男鞋","帽子","包子" ],
+          "url":[
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg",
+            "/static/img1/1494644521219_2.jpg"
+          ]
+    }
+
+]
+    )
+});
+
+
+app.get("/api/next",function(req,res){
+  res.json(
+      [
+  {"img":"/static/img1/1498014272450_2.jpg","name":"鱼缸"},
+  {"img":"/static/img1/1498014272450_2.jpg","name":"鱼缸"},
+  {"img":"/static/img1/1500451410111_2.jpg","name":"凉席"},
+  {"img":"/static/img1/1500451410111_2.jpg","name":"凉席"}
+
+
+  
+]
+    )
+})
+
+
+
+
+
+
+
+
+//----------完毕-------------------------
+
 var compiler = webpack(webpackConfig)
 
 var devMiddleware = require('webpack-dev-middleware')(compiler, {

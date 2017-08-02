@@ -3,9 +3,9 @@
   
     <div class="swiper-container">
        <div class="swiper-wrapper">
-           <div class="swiper-slide">img 111</div>
-           <div class="swiper-slide">Slide 2</div>
-           <div class="swiper-slide">Slide 3</div>
+           <div class="swiper-slide"><img src="../../static/img1/1494572885004_2.jpg" alt=""></div>
+           <div class="swiper-slide"><img src="../../static/img1/1494579829512_2.jpg" alt=""></div>
+           <div class="swiper-slide"><img src="../../static/img1/1495089061159_2.jpg" alt=""></div>
        </div>
        <div class="swiper-pagination"></div>
    </div>
@@ -31,11 +31,12 @@ export default {
 
         }
        },*/
-       method(){
-          var mySwiper = new Swiper('.swiper-container', {
-              autoplay: 3000,//可选选项，自动滑动
+       mounted(){
+          var swiper = new Swiper('.swiper-container', {
+              autoplay: 4000
           })
        }
+       
     }
 </script>
 
@@ -43,7 +44,13 @@ export default {
 <style lang="less" scoped>
   #swiper{
     width:100%;
-    height: 10rem;
+    height: 2.2rem;
+    border-bottom:1px solid red;
+
+    img{
+      width:100%;
+      height: 2.2rem;
+    }
   }
 
   // .swiper-container {

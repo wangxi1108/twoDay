@@ -8,90 +8,32 @@
 	        	<span>寻找宝贝</span>
 	         	<i class="iconfont icon-magnifier"></i>
 	        </router-link>
-      </header>
+      	</header>
+
 		<div class="content">
 			<ul class="con_left">
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
+				<!-- <li>
+					<router-link to="#" @click="dian">食品/饮料/酒水</router-link>
+				</li> -->
+				<li v-for="(lei, index) in leftList" :data-key=lei.id @click="changeBg(index)" :class="{'active':ind === index}">
+					{{lei.msg}}
 				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-				<li>
-					<router-link to="#">食品/饮料/酒水</router-link>
-				</li>
-			
-
-
+				
+							
 			</ul>
-			<div class="jian">
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
-				<p>1ererer</p>
+			<div class="con_right">
+				
+				<dl v-for="ele in lists">
+
+					<dt>{{ele.title}}</dt>
+					<dd>
+						<router-link to="/List" v-for="i in ele.img">{{i}}</router-link>
+					</dd>
+
+				</dl>
 
 			</div>
-
-
+				
 		</div>
 
 	</div>
@@ -102,16 +44,57 @@
 <script>
 
 import fen from '../../static/fen.css'
-
+import _conRight from '../../static/conRight.json'
 
 
 export default{
 	name:'fenlei',
 	data(){
 		return {
+			ind:0,
+			
+			lists:_conRight.one,
 
+			leftList:[
+				{msg:"食品/饮料/酒水",id:"1"},
+				{msg:"鞋靴/箱包/配饰",id:"2"},
+				{msg:"珠宝/眼镜/钟表",id:"3"},
+				{msg:"母婴/电教/玩具",id:"4"},
+				{msg:"母婴/电教/玩具",id:"5"},
+				{msg:"鞋靴/箱包/配饰",id:"6"},
+				{msg:"珠宝/眼镜/钟表",id:"7"},
+				{msg:"母婴/电教/玩具",id:"8"},
+				{msg:"母婴/电教/玩具",id:"9"},
+				{msg:"珠宝/眼镜/钟表",id:"10"},
+				{msg:"鞋靴/箱包/配饰",id:"11"},
+				{msg:"珠宝/眼镜/钟表",id:"12"},
+				{msg:"母婴/电教/玩具",id:"13"},
+				{msg:"母婴/电教/玩具",id:"14"},
+				{msg:"珠宝/眼镜/钟表",id:"15"}
+
+			]
 		}
 	},
+	 methods: {
+	    changeBg (index) {
+
+	     	this.ind = index;
+	     	// console.log(this.ind);
+		     	
+		     	switch(index){
+		     		case 0:
+		   			this.lists= _conRight.one;
+		   			break;
+		   			case 1:
+		   			this.lists= _conRight.two;
+		   			break;
+		   			case 2:
+		   			this.lists= _conRight.three;
+		   			break;
+		     	}
+	    	}
+	   },
+
 	components:{
 
 	}
@@ -123,7 +106,8 @@ export default{
 
 	.fenlei{
 	   position:relative;
-		
+		width:3.75rem;
+		height:6.67rem;
 	  }
 
   header{
@@ -147,6 +131,7 @@ export default{
 		.iconfont{
 			font-size:0.3rem;
 		}
+
     }
 	.right_a{
 		display:block;
@@ -173,4 +158,7 @@ export default{
     
   }
 
+	.active{
+		background:#fff;
+	}
 </style>
