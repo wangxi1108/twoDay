@@ -11,7 +11,7 @@
 				</p>
 			</dt>
 			<dd>
-				<router-link to="s" v-for="img in item.url"><img :src="img"></router-link>
+				<router-link to="/Detail" v-for="img in item.url"><img :src="img"></router-link>
 					
 				<!-- 注意路径写法： -->
 				 <!-- <router-link to="s"><img src="/static/img1/1494840138351_2.jpg" alt=""></router-link> -->

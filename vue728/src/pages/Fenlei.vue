@@ -2,7 +2,7 @@
 	<div class="fenlei">
 				
 		<header>
-	        <router-link to="#" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></router-link>
+	        <a href="JavaScript:void(-1)" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></a>
 	       
 	        <router-link to="#" class="right_a">
 	        	<span>寻找宝贝</span>
@@ -27,7 +27,11 @@
 
 					<dt>{{ele.title}}</dt>
 					<dd>
-						<router-link to="/List" v-for="i in ele.img">{{i}}</router-link>
+						
+						<div class="dda" v-for="i in ele.img" @click="gitList">
+							<router-link to="/List">{{i}}</router-link>
+						</div>
+
 					</dd>
 
 				</dl>
@@ -45,7 +49,7 @@
 
 import fen from '../../static/fen.css'
 import _conRight from '../../static/conRight.json'
-
+import $ from '../../static/jquery.js'
 
 export default{
 	name:'fenlei',
@@ -54,7 +58,7 @@ export default{
 			ind:0,
 			
 			lists:_conRight.one,
-
+			aa:'',
 			leftList:[
 				{msg:"食品/饮料/酒水",id:"1"},
 				{msg:"鞋靴/箱包/配饰",id:"2"},
@@ -92,8 +96,30 @@ export default{
 		   			this.lists= _conRight.three;
 		   			break;
 		     	}
-	    	}
-	   },
+	    	},
+	   gitList(e){
+	   		/*var _this= this;
+	   		$.get("/api/list",{},function(lili){
+	   			console.log(lili);
+	   			_this.aa= lili;
+	   		})*/
+	   		var parent= $(e.target).parents("dl").find("dt").html();
+	   		var son= $(e.target).html();
+	   		// console.log(parent,son);
+
+
+	   		var storage=window.localStorage;
+            var lie={
+                bigName:parent,
+                smallName:son
+            };
+            var lie=JSON.stringify(lie);
+            storage.setItem("lie",lie);
+            
+            // console.log(data);
+
+	   }
+	},
 
 	components:{
 

@@ -51,9 +51,14 @@
 				background:#eee;
 			}
 
+.con_right	dd .dda{
+					float:left;
+					width:0.5rem;
+					height:0.2rem;
+}
 .con_right	dd	a{
 					display:inline-block;
-					float:left;
+					
 					width:0.5rem;
 					height:0.2rem;
 					text-decoration:none;

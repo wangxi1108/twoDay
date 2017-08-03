@@ -29,10 +29,7 @@ export default {
 </script>
 
 <style lang="less"  scoped>
-  #head{
-    width:3.75rem;
-    height:0.42rem;
-  }
+  
 
    header{
       width: 100%;
@@ -42,6 +39,7 @@ export default {
       top:0;
       padding-top: 0.03rem;
       border-bottom: 1px solid #eee;
+      background:#fff;
 
     .letf_a{
       display:block;
