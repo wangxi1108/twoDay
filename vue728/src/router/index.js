@@ -7,6 +7,7 @@ import My from '@/pages/My'
 import List from '@/pages/List'
 import Detail from '@/pages/Detail'
 import App from '@/App'
+import Cart from '@/pages/Cart'
 
 
 Vue.use(Router)
@@ -52,6 +53,11 @@ export default new Router({
       path:'/Detail',
       name:'Detail',
       component:Detail
+    },
+    {
+      path:'/Cart',
+      name:'Cart',
+      component:Cart
     }
     
   ]

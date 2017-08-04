@@ -1,7 +1,7 @@
 <template>
   <div>
      <header>
-          <router-link to="#" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></router-link>
+          <a href="javascript:history.go(-1)" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></a>
          
           <router-link to="#" class="right_a">
             <span>寻找宝贝</span>

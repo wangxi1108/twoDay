@@ -11,26 +11,48 @@
 				</p>
 			</dt>
 			<dd>
-				<router-link to="/Detail" v-for="img in item.url"><img :src="img"></router-link>
-					
+				<div class="pinBox" v-for="ele in item.xinxi" @click="duXinxi">
+					<router-link to="/Detail"><img :src="ele.img"></router-link>
+					<b class="duID">{{ele.id}}</b>
+				</div>
 				<!-- 注意路径写法： -->
 				 <!-- <router-link to="s"><img src="/static/img1/1494840138351_2.jpg" alt=""></router-link> -->
 					
 			</dd>
 		
 		</dl>
-
 	</div>
-
 
 </template>
 
 <script>
+import $ from "../../../static/jquery.js"
+
+
 export default{
 	name:'biglei',
 	props:['bigList'],
-	method(){
+	data(){
+		return {
 
+		}
+	},
+
+	methods:{
+
+		duXinxi(e){//读取当前点击的商品id放到localStorage里面
+			
+			var duId= $(e.target).parents(".pinBox").children(".duID").html();
+			// console.log(duId);
+			var storage= window.localStorage;
+			
+			var bigXin={
+				id:duId
+			};
+			var bigXin=JSON.stringify(bigXin);
+			storage.setItem("bigXin",bigXin);
+			// console.log(bigXin);
+		}
 	}
 
 }
@@ -73,18 +95,24 @@ export default{
 			dd{
 				width: 100%;
 				height: 0.75rem;
-				
+				.pinBox{
+					width: 0.92rem;
+					height: 0.75rem;
+					float:left;
+					border-left:1px solid #eee;
+					border-bottom:1px solid #eee;
+						.duID{
+							display:none;
+						}
+				}
 				
 				a{
 					display:block;
-					float:left;
 					width: 0.92rem;
 					height: 0.75rem;
 					text-align:center;
 					line-height:0.75rem;
 					
-					border-left:1px solid #eee;
-					border-bottom:1px solid #eee;
 					img{
 						width:0.65rem;
 						height: 0.65rem;

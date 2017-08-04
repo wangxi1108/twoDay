@@ -2,7 +2,7 @@
 	<div class="fenlei">
 				
 		<header>
-	        <a href="JavaScript:void(-1)" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></a>
+	        <a href="javascript:history.go(-1)" class="letf_a"><i class="iconfont icon-iconxiangzuo"></i></a>
 	       
 	        <router-link to="#" class="right_a">
 	        	<span>寻找宝贝</span>
@@ -107,7 +107,6 @@ export default{
 	   		var son= $(e.target).html();
 	   		// console.log(parent,son);
 
-
 	   		var storage=window.localStorage;
             var lie={
                 bigName:parent,
@@ -117,7 +116,6 @@ export default{
             storage.setItem("lie",lie);
             
             // console.log(data);
-
 	   }
 	},
 

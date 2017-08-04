@@ -1,86 +1,92 @@
 [
-	{
+  {
          "title":"家居",
           "lei":["生活电器","个护健康","热门电器" ],
-          "url":[
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg",
-            "/static/img1/1499476874118_2.jpg"
+          "xinxi":[
+            {"img":"/static/img1/1499476874118_2.jpg","id":"401"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"102"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"103"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"104"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"105"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"106"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"107"},
+            {"img":"/static/img1/1499476874118_2.jpg","id":"108"}
+          
           ]
     },
     {
          "title":"珠宝首饰",
           "lei":["黄金首饰","钟表","眼镜" ],
-          "url":[
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg",
-            "/static/img1/1499400139048_2.jpg"
+          "xinxi":[
+            {"img":"/static/img1/1499400139048_2.jpg","id":"201"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"202"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"203"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"204"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"205"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"206"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"207"},
+            {"img":"/static/img1/1499400139048_2.jpg","id":"208"}
+
           ]
     },
     {
          "title":"鞋子箱包",
           "lei":["男鞋","帽子","包子" ],
-          "url":[
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png"
+          "xinxi":[
+            {"img":"/static/img1/1496824061627_2.png","id":"301"},
+            {"img":"/static/img1/1496824061627_2.png","id":"304"},
+            {"img":"/static/img1/1496824061627_2.png","id":"305"},
+            {"img":"/static/img1/1496824061627_2.png","id":"306"},
+            {"img":"/static/img1/1496824061627_2.png","id":"307"},
+            {"img":"/static/img1/1496824061627_2.png","id":"308"},
+            {"img":"/static/img1/1496824061627_2.png","id":"302"},
+            {"img":"/static/img1/1496824061627_2.png","id":"303"}
+
           ]
     },
     {
          "title":"鞋子箱包",
           "lei":["男鞋","帽子","包子" ],
-          "url":[
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png"
+          "xinxi":[
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+
           ]
     },
     {
          "title":"鞋子箱包",
           "lei":["男鞋","帽子","包子" ],
-          "url":[
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png",
-            "/static/img1/1496824061627_2.png"
-          ]
+          "xinxi":[
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"},
+            {"img":"/static/img1/1496824061627_2.png","id":"101"}
+
+            ]
     },
     {
          "title":"户外运动",
           "lei":["男鞋","帽子","包子" ],
-          "url":[
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg",
-            "/static/img1/1494644521219_2.jpg"
+          "xinxi":[
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"},
+            {"img":"/static/img1/1494644521219_2.jpg","id":"101"}
+
           ]
     }
 

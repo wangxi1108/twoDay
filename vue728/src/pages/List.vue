@@ -35,27 +35,39 @@ import $ from "../../static/jquery.js"
 import Liebiao from "../../static/liebiao.json"
 export default {
   name:'list',
-  dataList:'',
+
+
   data () {
     return {
-    	liebiao:Liebiao 
+    	liebiao:Liebiao ,
+    	dataList:''
     }
   },
-	beforeMount(){
+
+	mounted(){
 		//从localStorage读取刚刚点击了的选择数据
-	   	var storage=window.localStorage;
-	   	var data= JSON.parse(storage.getItem("lie"));
-            console.log(data);
+		var _this=this;
+
+		setTimeout(function(){//注意要用延时，不然页面还没有渲染完毕，依旧是上次的内容。
+
+			var storage=window.localStorage;
+	   		var data= JSON.parse(storage.getItem("lie"));
+
+            // console.log(data);
             // console.log(data.bigName,data.smallName);
             var big=data.bigName;
             var small=data.smallName;
 
-	  	var _liebiao=this.liebiao;
-	  	console.log(this.liebiao);
+	  		var _liebiao= _this.liebiao;
+	  	// console.log(this.liebiao);
 
 	 	//直接取要得数据，而不用再挨着遍历了！！！---------------重点
-	 	this.dataList= (_liebiao[big])[small];
-		console.log(this.dataList);
+	 	_this.dataList= (_liebiao[big])[small];
+	 	console.log(_liebiao)
+
+		},100)
+	   	
+		// console.log(this.dataList);
 
     },
 
