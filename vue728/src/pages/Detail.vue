@@ -25,6 +25,7 @@
 	            <del>￥{{detailDis.old}}</del>
 	        </div>
 	        <p class="goods_buy_give mt5">送e点:<span class="e_spot">{{detailDis.e}}</span></p>
+	        <i class="goods_id" style="display:none">{{detailDis.id}}</i>
    		</div>
    		<section>
    			背景
@@ -68,10 +69,12 @@
 		 			</div>
 		 		</div>
 		 		<div class="buy_btn">
-		 			<button class="buy_btn_add">加入购物车</button>
+		 			<button class="buy_btn_add" @click="addCart">加入购物车</button>
 		 			<button class="buy_btn_now">立即购买</button>
 		 		</div>
 		</div>
+		
+		<div class="success" v-show="successLook">加入购物车成功!!</div>
 
 	<!-- 查看购物车 -->
 		<router-link to="/Cart" class="look_cart" ><i class="iconfont icon-gouwuche"></i></router-link>
@@ -95,7 +98,8 @@ export default{
 			look:false,
 			liebiao:Liebiao,
 			detailDis:'', //列表详情信息
-			zhi:1
+			zhi:1,
+			successLook:false
 		}
 	},
 
@@ -123,7 +127,7 @@ export default{
 						if(localId== lieId){
 							// console.log(arr[i]);
 							_this.detailDis= arr[i];
-							console.log(_this.detailDis);
+							// console.log(_this.detailDis);
 						}
 					}
 					
@@ -148,6 +152,8 @@ export default{
     	},
     	closeAll(){
     		this.look= false;
+			this.successLook=false;
+
     	},
     	add(){
     		this.zhi++;
@@ -159,14 +165,65 @@ export default{
     		if(this.zhi<=1){
     			this.zhi=1
     		}
-    		
-    	}
-    },
+    	},
+    	//点击加入购物车
+    	addCart(){
+			this.successLook=true;
+			var  goodsId= $(".goods_id").html();
+			
+			var _zhi= this.zhi;
+			// console.log(goodsId,_zhi);
+		
+			var  sell={
+				id:goodsId,
+				zhi:_zhi
+			};
+
+			
+			var storage= window.localStorage;
+
+			var _products=JSON.parse(storage.getItem("products")) || [];
+
+			if ( _products ) {
+
+				_products.push(sell);
+				_products=JSON.stringify(_products);
+				storage.setItem("products",_products);
+			}else{
+				
+				_products.push(sell);
+				_products=JSON.stringify(_products);
+				storage.setItem("products",_products);
+			}
+			// console.log(sell);
+
+			
+			// console.log(_products);
+
+
+
+				/*_products.forEach(function(ele,idx){
+					if(ele.id== goodsId){
+						ele._zhi= _zhi
+					}else{
+						_products.push(sell)
+					}
+				});
+				console.log(_products);	*/
+
+		
+			
+
+			
+
+    	},
 
 	components:{
 
+		}
 	}
 }
+
 
 
 </script>
@@ -349,7 +406,6 @@ export default{
 
 	}
 	
-
 }
 
 
@@ -440,6 +496,16 @@ export default{
 		width: 100%;
 		height:8rem;
 		background:beige;
+	}
+
+	.success{
+		position:fixed;
+		left:1.2rem;
+		top: 4.5rem;
+		color:red;
+		font-size:0.2rem;
+		background:cyan;
+		z-index:50;
 	}
 }
 </style>

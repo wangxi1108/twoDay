@@ -26,6 +26,7 @@
 </template>
 
 <script>
+
   export default {
     name: 'app'
   }
@@ -71,4 +72,5 @@ footer .iconfont{
 footer .router-link-active .iconfont{
   color: red;
 }
+
 </style>
