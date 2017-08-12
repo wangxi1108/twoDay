@@ -2,7 +2,12 @@
 在另外一台电脑上克隆下来：
 	
 
+	创建钥匙的步骤：
+		（不同电脑都要配钥匙，且钥匙名也是不同的。
+		钥匙改变了，另一套也要重新创一次钥匙！！）
+
 	{{第一次克隆仓库要连接秘钥：
+
 		进入github,右边栏setting，左边点开 SSH and GPG keys	
 		
 		然后点击 generating SSH keys，执行 G-A-T 每个中的第1个命令。
@@ -10,18 +15,16 @@
 		1、:ssh-keygen -t rsa -b 4096 -C "25322582322qq.com"
 			然后出现 ：的地方按enter回车，y/n? 的地方按y。
 	
-		2、【:$ clip < ~/.ssh/id_rsa.pub 
+		【:$ clip < ~/.ssh/id_rsa.pub 
 		    然后立即回到github上的SSH and GPG keys
 
 		 点击新建 New SSH key 然后在新建钥匙的那里直接右键粘贴就可以了。
 		 】
 
-		3、：ssh -T git@github.com
+		：ssh -T git@github.com
 	}}
 
 
 	最后再进入github上的项目文件夹里，复制clone
 	执行： git clone git@github.com:wangxi1108/comment.git
 	就克隆下来了。 
-
-111
